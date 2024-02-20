@@ -1,0 +1,391 @@
+
+/*Setting hte padding margin for everything to zero as default*/
+* {
+    
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    background-color: rgb(241, 245, 245);
+}
+header
+{
+    background-color: black;
+    padding: 20px 0px 20px 0px;
+    
+}
+
+/*Making the link color to red*/
+.header a 
+{
+    color: inherit;
+}
+
+/*Making the link color to red and no underline*/
+.cntMe a
+{
+    color: inherit;
+    text-decoration: none;
+}
+
+/*Setting the name on top with colors padding margins*/
+header h1
+{
+    display: inline-block;
+    background-color: red;
+    padding: 10px 10px 10px 50px;
+    color: black;
+
+}
+
+/* Making the nav items to the right and seting the padding and margin*/
+.header nav
+{
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    display: flex;
+}
+/**/
+.header nav ul {
+    list-style-type: none;
+    margin-right: 50px;
+
+}
+
+/**/
+.header nav ul li {
+    display: inline-block;
+    margin-left: 28px;
+    color: red;
+    text-decoration: underline;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+}
+
+
+/* This is the main image that is being displayed */
+.banner
+{
+    height: 800px;
+    width: 100%;
+    background-image: url("../Assets/po.jpeg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    position: relative;
+    justify-content: left;
+}
+.bannerText
+{
+   
+    color: white;
+    font-size: xx-large;
+    padding-left: 3%;
+    padding-top: 20%;
+
+}
+
+
+.menu
+{
+    display: flex;
+    margin-right: 300px;
+    margin-top: 1%;
+}
+
+.heading 
+{
+    margin-left: 5%;
+    font-size: 60px;
+    text-align: right;
+    color: red;
+}
+
+/* Adding space between the heading on the left, adjustng them as the content on the right gets bigger*/
+.heading1
+{
+    margin-bottom: 50px;
+}
+.heading2
+{
+    margin-top: 60%;
+    margin-bottom: 190%;
+
+}
+
+.aboutMe p 
+{
+    font-size: x-large;
+}
+
+.aboutMe , .work
+{
+
+    border-style: solid;
+    border-color: red;
+    border-width: 10px;
+    border-top: 0;
+    border-bottom: 0;
+    border-right: 0;
+    padding-left: 2%; /*The space between the right content and border*/
+    margin-left: 1%;   /*The margin between the headings and the border line*/
+}
+
+/*Making the work grid, the main container of work section*/
+.work
+{
+    margin-top: 3%;  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap; /* This makes the imte not crush into each other */
+
+
+}
+
+
+.work img{
+    width: 100%;
+    height: 100%;
+}
+
+.project1
+{
+    
+    height: 600px;
+    flex-basis: 100%;
+    border-style: solid;
+    border-width: 10px;
+    border-color: red;
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 3%;
+    
+    
+}
+.project2, .project3, .project4, .project5
+{
+    width: 420px;
+    height: 180px;
+    background-color: pink;
+    border-style: solid;
+    border-style: solid;
+    border-width: 10px;
+    border-color: red;
+    margin-bottom: 3%;
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+/*Project one has different demensions then the projects 4-5*/
+.prjt1Name
+{
+    background-color: red;
+    height: fit-content;
+    width: fit-content;
+    font-size: 40px;
+    position: absolute;
+    margin-top: 20%;
+    
+}
+
+.prjtName
+{
+    background-color: red;
+    height: fit-content;
+    width: fit-content;
+    font-size: 30px;
+    position: absolute;
+    margin-top: 5%;
+    
+}
+
+.footer
+{
+    display: flex;
+    background-color: black;
+    
+}
+.cntMe
+{
+    color: red;
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+   text-align: center;
+   justify-content: center;
+   
+
+
+}
+.cntMe ul 
+{
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+    justify-content: space-evenly;
+
+}
+
+.cntMe ul li {
+    display: inline-block;
+    font-size: 40px;
+}
+
+
+.heading3
+{
+    color: red;
+    font-size: 60px;
+    text-align: right;
+    
+}
+
+
+/* making the nav and the work and the footer to hover */
+
+.work div:hover 
+{
+    transform: scale(1.1);
+}
+
+.header li:hover
+{
+    transform: scale(1.3);
+}
+
+.cntMe li:hover
+
+{
+    transform: scale(1.3);
+}
+
+@media only screen and (max-width: 1516px)
+{
+    .menu
+   {
+    margin-right: 200px;
+  
+
+   }
+
+
+  .heading2
+  {
+    margin-top: 100%;
+  }
+  .project1
+  {
+    height: 400px;
+  }
+
+  .project2, .project3, .project4, .project5
+{
+    width: 327px;
+    height: 110px;
+}
+
+}
+
+@media only screen and (max-width: 1240px)
+{
+    .heading , .heading3
+    {
+        font-size: 53px;
+    }
+    .cntMe ul li
+    {
+        font-size: 30px;
+    }
+    .menu
+   {
+    margin-right: 100px;
+  
+
+   }
+  .heading2
+  {
+    margin-top: 150%;
+  }
+
+  .project1
+  {
+    height: 200px;
+  }
+
+  .project2, .project3, .project4, .project5
+{
+    
+    height: 110px;
+    flex-basis: 100%;
+}
+
+}
+
+@media only screen and (max-width: 1070px)
+{
+    .heading , .heading3
+    {
+        font-size: 43px;
+    }
+    .cntMe ul li
+    {
+        font-size: 20px;
+    }
+    .heading2
+  {
+    margin-top: 200%;
+  }
+  
+
+}
+
+@media only screen and (max-width: 990px)
+{
+   .menu
+   {
+    margin-right: 70px;
+  
+   }
+   .heading
+   {
+    margin-left: 2%;
+    font-size: 40px;
+   }
+   
+   .header nav
+   {
+    margin: 0 0 0 0;
+    background-color: black;
+    width: 100%;
+   }
+}
+@media only screen and (max-width: 440px)
+{
+    .banner{
+        height: 300px;
+        width: 640px;
+        font-size: 3px;
+
+    }
+    .header
+    {
+        width: 540px;
+    }
+    .header nav 
+    {
+        font-size: 3px;
+    }
+
+
+}
+
+
